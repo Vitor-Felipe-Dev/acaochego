@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Acaochego</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro</h1>
+    </header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+    <main>
+      <form action="#">
+        <fieldset>
+          <legend>Cadastre-se</legend>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+          <label for="telefone">Tel</label>
+          <input type="tel" name="telefone" id="telefone" pattern="[0-9]{10,11}" required>
+          <label for="cep">Cep</label>
+          <input type="text" name="cep" id="cep" pattern="[0-9]{8}" required>
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf" pattern="[0-9]{11}" required>
+          <label for="nascimento">Nasc</label>
+          <input type="date" name="nascimento" id="nascimento" required>
+          <label for="cidade">cidade</label>
+          <input type="text" name="cidade" id="cidade" required>
+          <label for="estado">Estado</label>
+          <select name="estado" id="estado">
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="sc">Santa catarina</option>
+          </select>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>Contato: contato@acaochego.org</p>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>&copy; 2026 Acaochego - Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
