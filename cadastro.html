@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/cadastro.css" />
     <title>Cadastro - Acaochego</title>
   </head>
 
   <body>
-
     <header>
       <h1>Cadastro</h1>
     </header>
@@ -34,31 +33,15 @@
     </nav>
 
     <main>
-
-       <div class="toast" role="status">
-    ✓ Ação realizada com sucesso!
-  </div>
-
       <form action="#">
         <fieldset>
-
           <legend>Cadastre-se</legend>
 
           <label for="nome">Nome</label>
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            required
-          >
+          <input type="text" name="nome" id="nome" required />
 
           <label for="email">E-mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-          >
+          <input type="email" name="email" id="email" required />
 
           <label for="telefone">Telefone</label>
           <input
@@ -67,41 +50,19 @@
             id="telefone"
             pattern="[0-9]{10,11}"
             required
-          >
+          />
 
           <label for="cep">CEP</label>
-          <input
-            type="text"
-            name="cep"
-            id="cep"
-            pattern="[0-9]{8}"
-            required
-          >
+          <input type="text" name="cep" id="cep" pattern="[0-9]{8}" required />
 
           <label for="cpf">CPF</label>
-          <input
-            type="text"
-            name="cpf"
-            id="cpf"
-            pattern="[0-9]{11}"
-            required
-          >
+          <input type="text" name="cpf" id="cpf" pattern="[0-9]{11}" required />
 
           <label for="nascimento">Data de nascimento</label>
-          <input
-            type="date"
-            name="nascimento"
-            id="nascimento"
-            required
-          >
+          <input type="date" name="nascimento" id="nascimento" required />
 
           <label for="cidade">Cidade</label>
-          <input
-            type="text"
-            name="cidade"
-            id="cidade"
-            required
-          >
+          <input type="text" name="cidade" id="cidade" required />
 
           <label for="estado">Estado</label>
           <select name="estado" id="estado" required>
@@ -113,10 +74,10 @@
           </select>
 
           <button type="submit">Enviar</button>
-
         </fieldset>
       </form>
 
+      <div class="toast" role="status">✓ Cadastro realizado com sucesso!</div>
     </main>
 
     <footer>
@@ -124,6 +85,5 @@
       <p>Telefone: (11) 99999-9999</p>
       <p>&copy; 2026 Acaochego - Todos os direitos reservados.</p>
     </footer>
-
   </body>
 </html>
