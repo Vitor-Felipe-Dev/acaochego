@@ -3,37 +3,97 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/projetos.css">
     <title>Projetos - Acaochego</title>
   </head>
+
   <body>
+
     <header>
       <h1>Projetos Acaochego</h1>
       <p>Conheça nossas ações de proteção e cuidado animal.</p>
     </header>
+
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="cadastro.html">Cadastro</a>
+      <button class="menu-hamburguer">☰</button>
+
+      <div class="menu">
+        <a href="index.html">Início</a>
+
+        <div class="dropdown">
+          <a href="projetos.html">Projetos</a>
+
+          <div class="submenu">
+            <a href="projetos.html">Adoção</a>
+            <a href="projetos.html">Doações</a>
+            <a href="projetos.html">Voluntariado</a>
+          </div>
+        </div>
+
+        <a href="cadastro.html">Cadastro</a>
+      </div>
     </nav>
+
     <main>
+
+    <div class="alert" role="alert">
+      <strong>⚠️ Atenção!</strong>
+      <p>
+        A adoção responsável ajuda a garantir uma vida melhor para os animais.
+      </p>
+    </div>
+
+
+  
+
       <section>
+        <span class="badge badge-adocao">Adoção</span>
+
         <h2>Campanha de Adoção</h2>
-        <p> Nosso projeto de adoção busca encontrar novos lares para animais que precisam de uma família. Incentivamos a adoção responsável e o cuidado com os animais. </p>
+
+        <p>
+          Nosso projeto de adoção busca encontrar novos lares para animais
+          que precisam de uma família. Incentivamos a adoção responsável
+          e o cuidado com os animais.
+        </p>
       </section>
+
       <section>
-        <h2>Doaçoes</h2>
-        <p>A Acaochego recebe doações para ajudar na alimentação, medicamentos, tratamentos veterinários e outros cuidados necessários para os animais acolhidos.</p>
+        <span class="badge badge-doacao">Doação</span>
+
+        <h2>Doações</h2>
+
+        <p>
+          A Acaochego recebe doações para ajudar na alimentação, medicamentos,
+          tratamentos veterinários e outros cuidados necessários para os
+          animais acolhidos.
+        </p>
       </section>
+
       <section>
-        <h2>Volutariado</h2>
-        <img src="./imagens/voluntario_alimentando.jpg" alt="Pessoa alimentando animais">
-        <p>Pessoas interessadas podem participar como voluntárias, ajudando nos cuidados com os animais, na organização das campanhas e na divulgação das ações da ONG.</p>
+        <span class="badge badge-voluntariado">Voluntariado</span>
+
+        <h2>Voluntariado</h2>
+
+        <img
+          src="./imagens/voluntario_alimentando.jpg"
+          alt="Pessoa alimentando animais acolhidos"
+        >
+
+        <p>
+          Pessoas interessadas podem participar como voluntárias, ajudando
+          nos cuidados com os animais, na organização das campanhas e na
+          divulgação das ações da ONG.
+        </p>
       </section>
+
     </main>
+
     <footer>
-         <p>Contato: contato@acaochego.org</p>
-        <p>Telefone: (11) 99999-9999</p>
-        <p>&copy; 2026 Acaochego - Todos os direitos reservados.</p>
+      <p>Contato: contato@acaochego.org</p>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>&copy; 2026 Acaochego - Todos os direitos reservados.</p>
     </footer>
+
   </body>
 </html>
