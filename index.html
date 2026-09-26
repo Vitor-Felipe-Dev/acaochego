@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/projetos.css" />
+    <link rel="stylesheet" href="./css/cadastro.css" />
     <title>Acaochego | Proteção e cuidado animal</title>
   </head>
 
@@ -20,23 +22,23 @@
       <button class="menu-hamburguer">☰</button>
 
       <div class="menu">
-        <a href="index.html">Início</a>
+        <a href="#inicio">Início</a>
 
         <div class="dropdown">
-          <a href="./html/projetos.html">Projetos</a>
+          <a href="#projetos">Projetos</a>
 
           <div class="submenu">
-            <a href="./html/projetos.html">Adoção</a>
-            <a href="./html/projetos.html">Doações</a>
-            <a href="./html/projetos.html">Voluntariado</a>
+            <a href="#projetos">Adoção</a>
+            <a href="#projetos">Doações</a>
+            <a href="#projetos">Voluntariado</a>
           </div>
         </div>
 
-        <a href="./html/cadastro.html">Cadastro</a>
+        <a href="#cadastro">Cadastro</a>
       </div>
     </nav>
 
-    <main>
+    <main id="conteudo-principal">
       <section>
         <h2>Nossa missão</h2>
 
@@ -87,7 +89,7 @@
           de conscientização.
         </p>
 
-        <a href="./html/projetos.html">Conheça nossos projetos</a>
+        <a href="#projetos">Conheça nossos projetos</a>
       </section>
 
       <section>
@@ -104,7 +106,7 @@
           cuidado e acolhimento.
         </p>
 
-        <a href="./html/cadastro.html">Cadastre-se</a>
+        <a href="#cadastro">Cadastre-se</a>
 
         <a href="#modal">Quero ajudar</a>
       </section>
@@ -124,10 +126,13 @@
         <p>Toda contribuição pode fazer a diferença na vida de um animal.</p>
       </div>
     </div>
+
     <footer>
       <p>Contato: contato@acaochego.org</p>
       <p>Telefone: (11) 99999-9999</p>
       <p>&copy; 2026 Acaochego — Todos os direitos reservados.</p>
     </footer>
+
+    <script src="./js/app.js" defer></script>
   </body>
 </html>

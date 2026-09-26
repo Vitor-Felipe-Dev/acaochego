@@ -1,121 +1,8 @@
-/* Design System */
-
-:root {
-    /* Cores */
-    --cor-primaria: #4CAF50;
-    --cor-acao: #FF9800;
-    --cor-fundo: #FFFFFF;
-    --cor-texto: #555555;
-    --cor-borda: #E0E0E0;
-    --cor-sucesso: #81C784;
-    --cor-erro: #D32F2F;
-    --cor-informacao: #81D4FA;
-
-    /* Tipografia */
-    --tamanho-titulo: 36px;
-    --tamanho-secao: 30px;
-    --tamanho-subtitulo: 22px;
-    --tamanho-texto: 16px;
-    --tamanho-pequeno: 12px;
-
-    /* Espaçamento */
-    --espaco-pequeno: 8px;
-    --espaco-medio: 16px;
-    --espaco-grande: 24px;
-    --espaco-muito-grande: 32px;
-}
-
-
-/* Estrutura geral */
-
-body {
-    color: var(--cor-texto);
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-
-h1 {
-    font-size: var(--tamanho-titulo);
-}
-
-
-/* Cabeçalho */
-
-header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-fundo);
-    padding: var(--espaco-grande);
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header h1 {
-    font-size: var(--tamanho-titulo);
-}
-
-
-/* Navegação */
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding: var(--espaco-medio);
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: var(--espaco-medio);
-}
-
-.menu-hamburguer {
-    display: none;
-}
-
-nav a {
-    color: var(--cor-texto);
-    text-decoration: none;
-    padding: var(--espaco-pequeno);
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: var(--cor-acao);
-    border-bottom: 2px solid var(--cor-acao);
-}
-
-
-/* Dropdown */
-
-.dropdown {
-    position: relative;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-
-    background-color: var(--cor-fundo);
-    border: 1px solid var(--cor-borda);
-    padding: var(--espaco-pequeno);
-}
-
-.dropdown:hover .submenu {
-    display: flex;
-    flex-direction: column;
-    gap: var(--espaco-pequeno);
-}
-
-
 /* Formulário */
 
 form {
+    grid-column: 1 / -1;
+    width: 100%;
     max-width: 600px;
     margin: var(--espaco-grande) auto;
 }
@@ -140,7 +27,7 @@ input,
 select {
     width: 100%;
     box-sizing: border-box;
-    padding: var(--espaco-pequeno);
+    padding: var(--espaco-medio);
     border: 2px solid var(--cor-borda);
     border-radius: 4px;
     font-size: var(--tamanho-texto);
@@ -148,7 +35,7 @@ select {
 }
 
 
-/* Validação do formulário */
+/* Validação */
 
 input:focus,
 select:focus {
@@ -167,49 +54,17 @@ select:invalid {
 }
 
 
-/* Botão */
+/* Toast */
 
-button {
-    margin-top: var(--espaco-grande);
-    padding: var(--espaco-pequeno) var(--espaco-medio);
-    background-color: var(--cor-primaria);
-    color: var(--cor-fundo);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: var(--cor-acao);
-}
-
-button:focus {
-    outline: 2px solid var(--cor-acao);
-    outline-offset: 2px;
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
-button:disabled {
-    background-color: var(--cor-borda);
+.toast {
+    background-color: var(--cor-sucesso);
     color: var(--cor-texto);
-    cursor: not-allowed;
-}
+    padding: var(--espaco-medio);
+    border-radius: 4px;
 
-
-/* Rodapé */
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--espaco-pequeno);
-    padding: var(--espaco-grande);
-
-    border-top: 1px solid var(--cor-borda);
+    position: fixed;
+    bottom: var(--espaco-medio);
+    right: var(--espaco-medio);
 }
 
 
@@ -217,29 +72,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    .menu-hamburguer {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-    }
-
     form {
         max-width: 100%;
     }
-
-    header h1 {
-        font-size: var(--tamanho-secao);
-    }
-}
-
-.toast {
-    background-color: var(--cor-sucesso);
-    color: var(--cor-texto);
-    padding: var(--espaco-medio);
-    border-radius: 4px;
-    position: fixed;
-    bottom: var(--espaco-medio);
-    right: var(--espaco-medio);
 }
