@@ -140,7 +140,7 @@ const paginas = {
     `,
 
   cadastro: `
-    <form action="#">
+    <form action="#" novalidate>
         <fieldset>
             <legend>Cadastre-se</legend>
 

@@ -76,3 +76,11 @@ select:invalid {
         max-width: 100%;
     }
 }
+
+.erro {
+    border-color: var(--cor-erro);
+}
+
+.sucesso {
+    border-color: var(--cor-sucesso);
+}
