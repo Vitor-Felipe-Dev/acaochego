@@ -36,7 +36,7 @@ document.addEventListener("input", (event) => {
         const campo = event.target;
 
         if (campo.value.trim() === "") {
-            mostrarErro(campo, "O nome é obrigatório.");
+            mostrarErro(campo, "Digite seu nome completo.");
         } else {
             removerErro(campo);
         }
